@@ -1,0 +1,56 @@
+﻿#song {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4));
+}
+
+.top #song {
+    top: 20px;
+    bottom: unset;
+}
+
+.right #song {
+    right: 20px;
+    left: unset;
+    
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.box-background #song {
+    background-color: #0000006b;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#song-info {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+#title {
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1em;
+    font-family: "Torus Bold", NotoSansJP, sans-serif;
+}
+
+#artist {
+    font-size: 1em;
+    opacity: .8;
+}
+
+#album {
+    opacity: .8;
+}

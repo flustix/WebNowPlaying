@@ -1,0 +1,29 @@
+﻿#cover-stack {
+    position: relative;
+    width: 130px;
+    overflow: hidden;
+    display: grid;
+}
+
+#cover-stack img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#cover-stack img.show {
+    animation: swoop 0.4s forwards;
+}
+
+#cover-stack img.hide {
+    animation: swoopOut 0.4s forwards;
+}
+
+#covers {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 130px;
+    z-index: 2;
+}

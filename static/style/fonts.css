@@ -1,0 +1,14 @@
+﻿@font-face {
+    font-family: "Torus Regular";
+    src: url("../font/Torus-Regular.otf");
+}
+
+@font-face {
+    font-family: "Torus SemiBold";
+    src: url("../font/Torus-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "Torus Bold";
+    src: url("../font/Torus-Bold.otf");
+}

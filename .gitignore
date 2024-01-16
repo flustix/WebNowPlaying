@@ -1,0 +1,8 @@
+﻿.vs
+.idea
+.vscode
+
+bin
+obj
+
+WebNowPlaying.sln.DotSettings.user

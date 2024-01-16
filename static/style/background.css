@@ -1,0 +1,25 @@
+﻿#backgrounds img {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(5px);
+    opacity: 0;
+    transform: scale(1.06);
+
+    transition: opacity 0.4s, transform 0.4s;
+    object-fit: cover;
+}
+
+#backgrounds img.show {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+#backgrounds #dim {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, .6) 20%, rgba(0, 0, 0, .2) 100%);
+    z-index: 2;
+}
