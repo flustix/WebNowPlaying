@@ -15,12 +15,6 @@
 
     <ItemGroup>
         <None Include="$(SolutionDir)static\**" TargetPath="static\%(RecursiveDir)\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
-        <None Update="..\static\.gitignore">
-          <Link>.gitignore</Link>
-        </None>
-        <None Update="..\static\style\update.css">
-          <Link>style\update.css</Link>
-        </None>
     </ItemGroup>
 
 </Project>
