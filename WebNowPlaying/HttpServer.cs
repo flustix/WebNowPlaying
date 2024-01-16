@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using System.Reflection;
 using System.Text;
 using Newtonsoft.Json;
 
@@ -66,6 +67,13 @@ public static class HttpServer {
             case "": // redirect "/" to "/nowplaying.html"
                 data = GetFile("nowplaying.html");
                 ext = ".html";
+                break;
+            
+            case "version.json":
+                var version = new {
+                    version = Assembly.GetExecutingAssembly().GetName().Version?.ToString(3)
+                };
+                data = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(version));
                 break;
             
             default:

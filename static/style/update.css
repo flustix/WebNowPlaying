@@ -1,0 +1,33 @@
+#update-notification {
+    display: none;
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 50px;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    z-index: 100;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    animation: update-notification-fade 10s forwards;
+}
+
+#update-notification h1 {
+    font-size: 1.5em;
+    font-family: "Torus Bold", sans-serif;
+}
+
+#update-notification h3 {
+    font-size: 1em;
+    font-family: "Torus SemiBold", sans-serif;
+}
+
+#update-notification a {
+    color: coral;
+    text-decoration: none;
+    font-family: "Torus Bold", sans-serif;
+}

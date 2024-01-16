@@ -4,6 +4,7 @@
 @import "covers.css";
 @import "song.css";
 @import "progress.css";
+@import "update.css";
 
 * {
     margin: 0;
