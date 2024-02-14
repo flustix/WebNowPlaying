@@ -12,6 +12,7 @@
     font-family: "Torus SemiBold", NotoSansJP, sans-serif;
     font-weight: 300;
     user-select: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,6 +23,8 @@ body {
     color: white;
     transition: opacity 0.4s;
     overflow: hidden;
+
+    display: flex;
 }
 
 #connecting-overlay {
