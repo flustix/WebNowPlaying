@@ -17,11 +17,13 @@ const connectOverlay = document.getElementById("connecting-overlay");
 const query = new URLSearchParams(window.location.search);
 
 const hideAlbum = getParam(query, "album", "0", false);
-const progress = getParam(query, "progress", "1", true);
 const bg = getParam(query, "bg", "1", true);
 const positionTop = getParam(query, "v", "top", false);
 const positionRight = getParam(query, "h", "right", false);
 const boxBackground = getParam(query, "box-bg", "1", false);
+
+const progress = getParam(query, "progress", "1", true);
+const progressFullSize = getParam(query, "progress-size", "full", false);
 
 let lastData = {
     player: "",
@@ -42,6 +44,8 @@ if (positionRight)
     document.body.classList.add("right");
 if (boxBackground)
     document.body.classList.add("box-background");
+if (progressFullSize)
+    songProgress.classList.add("progress-full");
 
 start().then(() => console.log("Started"));
 

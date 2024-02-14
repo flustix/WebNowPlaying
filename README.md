@@ -30,13 +30,14 @@ You can now open the overlay by opening `http://localhost:8975/` in your browser
 ### Configuration
 You can change the settings of the web-view by adding query parameters to the url.
 
-| Parameter  | Description                                    | Values          | Default  |
-|------------|------------------------------------------------|-----------------|----------|
-| `album`    | Display the album name                         | `0`, `1`        | `1`      |
-| `progress` | Display the progress bar                       | `0`, `1`        | `1`      |
-| `bg`       | Display the background                         | `0`, `1`        | `1`      |
-| `v`        | The vertical position of the overlay           | `top`, `bottom` | `bottom` |
-| `h`        | The horizontal position of the overlay         | `left`, `right` | `right`  |
-| `box-bg`   | Shows a transparent background behind the text | `0`, `1`        | `0`      |
+| Parameter       | Description                                     | Values           | Default  |
+|-----------------|-------------------------------------------------|------------------|----------|
+| `album`         | Display the album name.                         | `0`, `1`         | `1`      |
+| `progress`      | Display the progress bar.                       | `0`, `1`         | `1`      |
+| `progress-size` | The size of the progress bar.                   | `normal`, `full` | `normal` |
+| `bg`            | Display the background.                         | `0`, `1`         | `1`      |
+| `v`             | The vertical position of the overlay.           | `top`, `bottom`  | `bottom` |
+| `h`             | The horizontal position of the overlay.         | `left`, `right`  | `right`  |
+| `box-bg`        | Shows a transparent background behind the text. | `0`, `1`         | `0`      |
 
 For example: `http://localhost:8975/?progress=0&bg=0` will disable the progress bar and the background.

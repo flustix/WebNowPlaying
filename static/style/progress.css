@@ -4,6 +4,10 @@
     margin-top: 10px;
 }
 
+#progress.progress-full  {
+    width: 100%;
+}
+
 #progress-times {
     display: flex;
     flex-direction: row;
