@@ -41,10 +41,18 @@
     align-items: end;
 }
 
+.song-info-text > * {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+}
+
 #title {
     font-size: 2em;
     font-weight: 500;
-    line-height: 1em;
     font-family: "Torus Bold", NotoSansJP, sans-serif;
 }
 
