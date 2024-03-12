@@ -1,4 +1,14 @@
-﻿#cover-stack {
+﻿#covers {
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 130px;
+    width: 130px;
+    min-height: 130px;
+    height: 130px;
+    z-index: 2;
+}
+
+#cover-stack {
     position: relative;
     width: 130px;
     overflow: hidden;
@@ -19,11 +29,4 @@
 
 #cover-stack img.hide {
     animation: swoopOut 0.4s forwards;
-}
-
-#covers {
-    border-radius: 20px;
-    overflow: hidden;
-    height: 130px;
-    z-index: 2;
 }
